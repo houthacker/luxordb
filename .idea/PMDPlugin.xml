@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PMDPlugin">
+    <option name="customRuleSets">
+      <list>
+        <option value="$PROJECT_DIR$/config/pmd/pmd.xml" />
+      </list>
+    </option>
+    <option name="optionKeyToValue">
+      <map>
+        <entry key="Statistics URL" value="" />
+        <entry key="Target JDK" value="24-preview" />
+        <entry key="Target Kotlin version" value="1.8" />
+        <entry key="Threads" value="24" />
+      </map>
+    </option>
+  </component>
+</project>
