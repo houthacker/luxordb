@@ -1,0 +1,8 @@
+[versions]
+spotbugs-annotations = "4.9.4"
+slf4j = "2.0.17"
+
+[libraries]
+spotbugs-annotations = { module = "com.github.spotbugs:spotbugs-annotations", version.ref = "spotbugs-annotations" }
+slf4j-api = { module = "org.slf4j:slf4j-api", version.ref = "slf4j" }
+slf4j-simple = { module = "org.slf4j:slf4j-simple", version.ref = "slf4j" }

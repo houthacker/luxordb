@@ -20,13 +20,13 @@ repositories {
 }
 
 dependencies {
-    compileOnly("com.github.spotbugs:spotbugs-annotations")
+    compileOnly(libs.spotbugs.annotations)
 
-    implementation("org.slf4j:slf4j-api")
+    implementation(libs.slf4j.api)
 
     testImplementation(platform("org.junit:junit-bom:5.10.0"))
     testImplementation("org.junit.jupiter:junit-jupiter")
-    testImplementation("org.slf4j:slf4j-simple")
+    testImplementation(libs.slf4j.simple)
 }
 
 tasks {
@@ -67,7 +67,7 @@ tasks {
 
     spotbugsMain {
         reports.create("html") {
-            required = true
+            required.set(true)
             outputLocation = layout.buildDirectory.file("reports/spotbugs.html")
             setStylesheet("fancy-hist.xsl")
         }
